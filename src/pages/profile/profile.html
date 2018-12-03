@@ -1,0 +1,22 @@
+<ion-content text-center padding>
+  <ion-img class="dm-profilepic" width="200" height="200" src="{{authService.currentUser.photoURL}}?width=200&height=200"></ion-img>
+  <button ion-button clear disabled>Change</button>
+  <ion-card text-left>
+    <ion-card-header>
+      Profile Settings
+    </ion-card-header>
+    <ion-card-content>
+      <ion-grid>
+        <ion-row>
+          <ion-col col-4>Name</ion-col>
+          <ion-col>{{authService.currentUser.displayName}}</ion-col>
+        </ion-row>
+        <ion-row>
+          <ion-col col-4>Email</ion-col>
+          <ion-col>{{authService.currentUser.email}}</ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-card-content>
+  </ion-card>
+  <button ion-button color="danger" (click)="logout()">Logout</button>
+</ion-content>

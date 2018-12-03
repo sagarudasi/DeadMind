@@ -1,5 +1,7 @@
 {
   "name": "Dead Mind",
-  "integrations": {},
+  "integrations": {
+    "cordova": {}
+  },
   "type": "ionic-angular"
 }
